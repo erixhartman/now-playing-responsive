@@ -51,3 +51,14 @@
   font-size: 2em;
   line-height: 1.1;
 }
+
+@media (min-width: 768px) {
+  .movie {
+    margin-left: 10%;
+    width: 90%;
+  }
+
+  .movie-overview {
+    display: block;
+  }
+}

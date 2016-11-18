@@ -52,8 +52,8 @@
   line-height: 1.1;
 }
 
-@media (min-width: 768px) {
-  .movie {
+@media (min-width: 768px) and (max-width: 991px) {
+  main {
     margin-left: 10%;
     width: 90%;
   }
@@ -61,4 +61,41 @@
   .movie-overview {
     display: block;
   }
+}
+
+
+@media (min-width: 992px) {
+  main {
+    margin-left: 10%;
+    width: 90%;
+  }
+
+  .movie {
+    width: 33.33%;
+    float: left;
+  }
+
+  .movie:nth-child(n+2) .movie-backdrop{
+    display: none;
+  }
+
+  .movie:nth-child(n+2) .movie-poster{
+    display: block;
+  }
+
+
+   .movie:first-child {
+    width: 100%;
+  }
+
+   .movie:first-child .movie-overview {
+    display: block;
+  }
+  // .movie-backdrop:first-child {
+  //   display: block;
+  // }
+  //
+  // .movie-poster:first-child {
+  //   display: none;
+  // }
 }
